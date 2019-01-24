@@ -1,4 +1,9 @@
-const s = new Set([1,2,3])
-for (let item of s.values()) {
-  console.log(item);
+function f() {
+  let m = 1;
+  let n = 2;
+  return function g(m,n) {
+    
+  };
 }
+f();
+console.log(f())

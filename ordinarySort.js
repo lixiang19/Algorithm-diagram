@@ -18,8 +18,8 @@ function selectionSort(arr) {
     smallestIndex = findSmallest(arr)
     newArr.push(arr[smallestIndex])
     arr.splice(smallestIndex,1)
-    console.log(arr)
   }
   return newArr
 }
 const arr1 = [1,5,6,4,8,9]
+console.log('结果是',selectionSort(arr1))

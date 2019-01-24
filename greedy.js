@@ -20,7 +20,6 @@ while (states_needed.size>0) {
     if (stations.hasOwnProperty(key)) {
       const element = stations[key];
       let covered = getIntersection(states_needed,element)
-      console.log(' states_covered', states_covered)
       if (covered.size>states_covered.size) {
         best_station = key
         states_covered = covered
@@ -29,5 +28,5 @@ while (states_needed.size>0) {
   }
   states_needed = getDifference(states_needed,states_covered)
   final_stations.add(best_station)
-  console.log("​final_stations", final_stations)
 }
+console.log("​final_stations", final_stations)
